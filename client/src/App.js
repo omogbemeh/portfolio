@@ -1,18 +1,25 @@
 import React, { Fragment } from 'react';
 import Navbar from './layout/Navbar';
-import Home from './layout/Home'
-import './App.css';
-import Kanye from './layout/Kanye';
-import Contact from './layout/Contact';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './home/Home'
+import About from './about/About'
 
-function App() {
+import './App.css';
+
+
+const App = () => {
+  
   return (
-    <Fragment>
-      <Navbar />
-      <Home />
-      <Kanye />
-      <Contact />
-    </Fragment>
+    <Router>
+      <Fragment>
+        <Navbar />
+        <Switch>
+          <Route exact path = '/' component={Home} />
+          <Route exact path = '/about' component={About} />
+        </Switch>
+      </Fragment>
+    </Router>
+    
   );
 }
 

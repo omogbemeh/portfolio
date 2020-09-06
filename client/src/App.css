@@ -63,6 +63,7 @@ p {
 }
 
 .menu-togglers {
+    cursor: pointer;
     color: var(--dark);
     position: absolute;
     top: 50%;
@@ -202,6 +203,7 @@ p {
 }
 
 .name-home {
+    background-color: var(--yellow);
     font-size: 1.5rem;
 }
 
@@ -210,8 +212,10 @@ p {
 }
 
 .home a {
+    letter-spacing: 2px;
+    margin-right: -2px;
     margin: 2rem auto 1rem auto;
-    text-transform: lowercase;
+    text-transform: uppercase;
     text-decoration: none;
     border: solid 2px var(--dark);
     padding: .5rem;
@@ -244,12 +248,16 @@ p {
 
 .kanye .content {
     margin-bottom: 1.1rem;
-    font-size: .9rem;
+    font-size: 1.1rem;
+    background-color: var(--yellow);
+    box-sizing: content-box;
 }
 
 .kanye a {
+    letter-spacing: 2px;
+    margin-right: -2px;
     margin: 2rem auto 1rem auto;
-    text-transform: lowercase;
+    text-transform: uppercase;
     text-decoration: none;
     border: solid 2px var(--dark);
     padding: .5rem;
@@ -260,6 +268,11 @@ p {
     -o-border-radius: .5rem;
     color: var(--dark);
     font-size: .7rem;
+}
+
+.kanye tt {
+    display: flex;
+    line-height: 1.5;
 }
 
 .icons {
@@ -275,4 +288,32 @@ p {
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+.about-me {
+    border: 3px solid var(--dark);
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.about-me h3 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.about-me p {
+    line-height: 1.5;
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.school {
+    background-color: var(--yellow);
 }
