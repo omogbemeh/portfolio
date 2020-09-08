@@ -124,6 +124,11 @@ p {
     -o-transform: translateX(0);
 }
 
+.open .fa-times {
+    display: block;
+    color: var(--dark);
+}
+
 .nav-list::before {
     content: '';
     position: absolute;
@@ -144,6 +149,10 @@ p {
     color: var(--light);
     letter-spacing: 3px;
     margin-right: -3px;
+}
+
+.nav-link a:hover {
+    color: var(--blue);
 }
 
 .nav-link {
@@ -194,8 +203,8 @@ p {
     justify-content: center;
 }
 
-.heading h3 {
-    font-weight: 100;
+.heading h4 {
+    margin: .4rem 0;
 }
 
 .heading {
@@ -203,12 +212,13 @@ p {
 }
 
 .name-home {
-    background-color: var(--yellow);
+    background-color: var(--blue);
     font-size: 1.5rem;
 }
 
 .heading p {
-    line-height: 1.6;
+    line-height: 1.4;
+    margin-bottom: .7rem;
 }
 
 .home a {
@@ -226,6 +236,12 @@ p {
     -o-border-radius: .5rem;
     color: var(--dark);
     font-size: .7rem;
+}
+
+.home a:hover,
+.home a:focus {
+    background-color: var(--yellow);
+    color: var(--dark);
 }
 
 .kanye {
@@ -268,6 +284,10 @@ p {
     -o-border-radius: .5rem;
     color: var(--dark);
     font-size: .7rem;
+}
+
+.kanye a:hover {
+    background-color: var(--blue);
 }
 
 .kanye tt {
@@ -315,6 +335,92 @@ p {
 }
 
 .school {
+    background-color: var(--yellow);
+}
+
+.footer {
+    border: 3px solid var(--dark);
+    padding: 1rem 0;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    text-align: center;
+    font-size: .7rem;
+}
+
+.contact-form {
+    position: relative;
+    border: 3px solid var(--dark);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    align-items: center;
+    display: flex;
+    padding: 2rem 2rem;
+}
+
+.contact h4 {
+    margin-bottom: 1rem;
+}
+
+.contact-form input {
+    border: 3px solid var(--dark);
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--light);
+    color: black;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.contact-form input:focus {
+    background-color: var(--yellow);
+}
+
+.contact-item {
+    position: relative;
+}
+
+.contact-item input {
+    width: 70vw;
+    min-width: 100%;
+}
+
+.far {
+    position: absolute;
+    right: 1rem;
+    top: 20%;
+}
+
+.contact-form a {
+    padding: .5rem;
+    font-size: .8rem;
+    border: 2px solid var(--dark);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rme;
+    -moz-border-radius: 1rme;
+    -ms-border-radius: 1rme;
+    -o-border-radius: 1rme;
+    background-color: var(--dark);
+    color: #fff;
+}
+
+.contact span {
+    background-color: var(--yellow);
+}
+
+.contact-form a:hover,
+.contact-form a:focus {
     background-color: var(--yellow);
 }
 
@@ -419,9 +525,12 @@ p {
         font-size: 2.2rem;
     }
     .kanye .title {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .kanye .content {
-        font-size: 2.3rem;
+        font-size: 2rem;
+    }
+    .icons {
+        font-size: 1.4rem;
     }
 }
