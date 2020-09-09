@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react';
-import Navbar from './layout/Navbar';
+import Navbar from './components/layout/Navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Home from './home/Home';
-import About from './about/About';
-import Contact from './contact/Contact'
-import Footer from './layout/Footer'
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Contact from './components/contact/Contact'
+import Footer from './components/layout/Footer';
+import Project from './components/project/Project';
+
 
 import './App.css';
 
@@ -19,6 +21,7 @@ const App = () => {
           <Route exact path = '/' component={Home} />
           <Route exact path = '/about' component={About} />
           <Route exact path = '/contact' component={Contact} />
+          <Route exact path = '/projects' component={Project} />
         </Switch>
         <Footer />
       </Fragment>
