@@ -6,7 +6,7 @@ const Footer = () => {
             <section>
                 <div className='container'>
                     <div className="footer">
-                        <p>Designed by Praise Omogbemeh {new Date().getFullYear()}</p>
+                        <p>Designed by <strong>Praise Omogbemeh</strong> {new Date().getFullYear()}</p>
                     </div>
                 </div>
             </section>

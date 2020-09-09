@@ -24,7 +24,7 @@ export const Contact = () => {
                         <form onSubmit={e => onSubmit(e)}>
                             <div className='contact-item'>
                                 <input onChange={e => {onChange(e)}} type="text" placeholder='Name' name='name' value={name}/>
-                                { name !== '' && <button onClick={e => setFormData({ ...formData, name: ''})}><i className="far fa-2x fa-times-circle"></i></button> }
+                                { name !== '' &&  <i onClick={e => setFormData({ ...formData, name: ''})} className="far fa-2x fa-times-circle"></i>}
                                 
                             </div>
                             <div className='contact-item'>
