@@ -13,7 +13,6 @@ export const Contact = () => {
 
     const onSubmit = e => {
         e.preventDefault()
-        console.log(123);
         setFormData({name: '', email: ''})
     }
         return (
@@ -32,7 +31,7 @@ export const Contact = () => {
                                 <input onChange={e => {onChange(e)}} name='email' value={email} type="email" placeholder='Email'/>
                                 { email !== '' && <button onClick={e => setFormData({ ...formData, email: ''})}><i className="far fa-2x fa-times-circle"></i></button>                            }
                             </div>
-                            <a type='submit' className="btn about-btn">Submit</a>
+                            <button className='submit-contact' type='submit'>Submit</button>
                         </form>
                     </div>
                 </div>

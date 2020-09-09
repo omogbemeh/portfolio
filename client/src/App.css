@@ -437,7 +437,7 @@ p {
     -o-transform: translateY(-25%);
 }
 
-.contact-form a {
+.submit-contact {
     padding: .5rem;
     font-size: .8rem;
     margin-top: .4rem;
