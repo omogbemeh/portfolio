@@ -449,6 +449,9 @@ p {
     -o-border-radius: .6rem;
     background-color: var(--dark);
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
 }
 
 .contact span {
