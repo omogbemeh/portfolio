@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import devconnect from '../../Images/devconnect.png'
-import rosa from '../../Images/rosa.png'
+import devconnect from '../../Images/devconnect.jpg'
+import rosa from '../../Images/rosa.jpg'
 
 
 export const Project = () => {
