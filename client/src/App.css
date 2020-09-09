@@ -407,6 +407,9 @@ p {
     background-color: var(--light);
     color: black;
     font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
     outline: none;
 }
 
