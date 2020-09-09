@@ -145,7 +145,7 @@ p {
     opacity: 1;
 }
 
-.nav-link a {
+.nav-link {
     color: var(--light);
     letter-spacing: 3px;
     margin-right: -3px;
@@ -338,6 +338,11 @@ p {
     line-height: 1.5;
 }
 
+.solutions,
+.reach-out {
+    background-color: var(--yellow);
+}
+
 .skill-icons {
     display: flex;
     justify-content: space-between;
@@ -406,10 +411,8 @@ p {
     margin-bottom: 1rem;
     background-color: var(--light);
     color: black;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: -2px;
+    font-size: .8rem;
+    text-transform: lowercase;
     outline: none;
 }
 
@@ -507,6 +510,35 @@ p {
     display: none;
 }
 
+.not-found {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: 3px solid var(--dark);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.not-found h3 {
+    margin: 0 0 2rem;
+    letter-spacing: 4px;
+    font-size: 5rem;
+}
+
+.not-found i {
+    color: red;
+    margin: 0 0 2rem;
+}
+
+.not-found p {
+    font-size: 1.3rem;
+}
+
 @media screen and (max-width: 415px) {
     .skill-item i {
         font-size: 2rem;
@@ -574,8 +606,9 @@ p {
     }
     .contact-item input {
         border: 2px solid var(--dark);
-        padding: .3rem;
+        padding: .6rem;
         width: 67vw;
+        font-size: .8rem;
     }
 }
 
@@ -618,7 +651,7 @@ p {
         margin-right: 1rem;
         font-size: .8rem;
     }
-    .nav-link a {
+    .nav-link {
         color: var(--dark);
     }
     .home {

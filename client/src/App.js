@@ -6,6 +6,7 @@ import About from './components/about/About';
 import Contact from './components/contact/Contact'
 import Footer from './components/layout/Footer';
 import Project from './components/project/Project';
+import NotFound from './components/layout/NotFound'
 
 
 import './App.css';
@@ -22,6 +23,7 @@ const App = () => {
           <Route exact path = '/about' component={About} />
           <Route exact path = '/contact' component={Contact} />
           <Route exact path = '/projects' component={Project} />
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </Fragment>

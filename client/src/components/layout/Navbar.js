@@ -14,10 +14,10 @@ const Navbar = () => {
                         <h3><Link to='/'>Praise O</Link></h3>
                     </div>
                     <ul className="nav-list" onClick={e => {toggleMenu(!hideMenu)}}>
-                        <li className="nav-link"><Link to='/'>Home</Link></li>
-                        <li className="nav-link"><Link to='/about'>About</Link></li>
-                        <li className="nav-link"><Link to='/projects'>Projects</Link></li>
-                        <li className="nav-link"><Link to='/contact'>Contact</Link></li>
+                        <Link to='/'><li className="nav-link">Home</li></Link>
+                        <Link to='/about'><li className="nav-link">About</li></Link>
+                        <Link to='/projects'><li className="nav-link">Projects</li></Link>
+                        <Link to='/contact'><li className="nav-link">Contact</li></Link>
                     </ul>
                 </nav>
         </header>
