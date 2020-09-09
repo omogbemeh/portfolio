@@ -32,7 +32,7 @@ export const Contact = () => {
                                 <input onChange={e => {onChange(e)}} name='email' value={email} type="email" placeholder='Email'/>
                                 { email !== '' && <button onClick={e => setFormData({ ...formData, email: ''})}><i className="far fa-2x fa-times-circle"></i></button>                            }
                             </div>
-                            <button type='submit' className="btn about-btn">Submit</button>
+                            <a type='submit' className="btn about-btn">Submit</a>
                         </form>
                     </div>
                 </div>
