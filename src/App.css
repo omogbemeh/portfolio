@@ -104,6 +104,11 @@ p {
 .hero-header-text {
   font-size: 120px;
   font-weight: 700;
+  background: url("/images/cloud-gif.gif");
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-bio {
@@ -128,6 +133,10 @@ p {
 @media screen and (max-width: 767px) {
   .container {
     padding: 30px;
+  }
+
+  .hero {
+    height: 20vh;
   }
 
   .hero-header-text {
@@ -171,7 +180,7 @@ p {
 @media (prefers-color-scheme: dark) {
   body {
     color: #fdfdfd;
-    background: #121212;
+    background: #131414;
   }
 
   a {
